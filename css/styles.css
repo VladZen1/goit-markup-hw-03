@@ -43,6 +43,13 @@ img {
 .link {
   text-decoration: none;
 }
+.section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.benefits{
+  padding-bottom: 0px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -136,13 +143,11 @@ img {
   color: #ffffff;
   background: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background: #188ce8;
-}
-.benefits {
-  padding: 94px;
 }
 .benefits-title {
   font-weight: bold;
@@ -151,9 +156,17 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.benefits-list {
+.parent-indent {
   display: flex;
   align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-wrap: wrap;
+
+}
+.spacing-between-cards{
+  margin-left: 30px;
+margin-top: 30px;
 }
 
 }
@@ -172,6 +185,7 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
@@ -198,6 +212,10 @@ img {
 .footer {
   background: #2f303a;
 }
+.indent-footer{
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
 .link-footer {
   font-style: normal;
   font-weight: normal;
@@ -217,6 +235,7 @@ img {
 
 /*Портфолио*/
 .filter-btn {
+  margin-bottom: 34px;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -225,8 +244,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
-
+.parent-indent-btn{
+  display: flex;
+  justify-content: center;
+  
+}
+.spacing-between-cards-portfolio{
+  margin-bottom: 30;
+}
 .filter-btn:hover,
 .filter-btn:focus {
   background: #188ce8;
