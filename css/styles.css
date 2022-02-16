@@ -43,11 +43,11 @@ img {
 .link {
   text-decoration: none;
 }
-.section{
+.section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.benefits{
+.benefits {
   padding-bottom: 0px;
 }
 .logo {
@@ -161,14 +161,25 @@ img {
   align-items: center;
   margin-left: -30px;
   margin-top: -30px;
-  flex-wrap: wrap;
-
 }
-.spacing-between-cards{
+.spacing-between-cards {
   margin-left: 30px;
-margin-top: 30px;
+  margin-top: 30px;
 }
-
+.cards-benefits {
+  flex-basis: calc((100%-4 * 30) / 4);
+}
+.skills-card {
+  flex-basis: calc((100%-3 * 30) / 3);
+}
+.team-card {
+  flex-basis: calc((100%-4 * 30) / 4);
+  border: 1px solid #ccc;
+  border-top: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.cards-portfolio {
+  flex-basis: calc((100%-3 * 30) / 3);
 }
 .description {
   font-size: 14px;
@@ -194,6 +205,12 @@ margin-top: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team-cards-name {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
 .position {
   font-size: 16px;
   line-height: 1.19;
@@ -212,7 +229,7 @@ margin-top: 30px;
 .footer {
   background: #2f303a;
 }
-.indent-footer{
+.indent-footer {
   padding-top: 60px;
   margin-bottom: 20px;
 }
@@ -234,6 +251,13 @@ margin-top: 30px;
 }
 
 /*Портфолио*/
+.header-portfolio {
+  border: 1px solid #ececec;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 25px;
+}
 .filter-btn {
   margin-bottom: 34px;
   padding: 6px 22px;
@@ -245,19 +269,28 @@ margin-top: 30px;
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
+  border-width: 0px;
 }
-.parent-indent-btn{
+.parent-indent-btn {
   display: flex;
   justify-content: center;
-  
 }
-.spacing-between-cards-portfolio{
+.spacing-between-cards-portfolio {
   margin-bottom: 30;
+}
+.portfolio-list {
+  flex-wrap: wrap;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background: #188ce8;
   color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.portfolio-cards-name {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 .list-item {
   width: 370px;
@@ -265,7 +298,7 @@ margin-top: 30px;
   left: 215px;
   top: 262px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+
   box-sizing: border-box;
 }
 .list-item-h {
@@ -279,4 +312,7 @@ margin-top: 30px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.footer-p-b {
+  padding-bottom: 60px;
 }
