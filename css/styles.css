@@ -2,6 +2,8 @@
   --accent-color: #2196f3;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  --hero-collor: #ffffff;
+  --logo-footer-collor: #ffffff;
 }
 
 body {
@@ -57,7 +59,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-  margin-right: 94px;
+  margin-right: 93px;
 }
 .logo-blue {
   color: var(--accent-color);
@@ -68,11 +70,11 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .nav-list {
   display: flex;
@@ -81,6 +83,7 @@ img {
 .contact-header {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .contact-header-mail {
   margin-right: 50px;
@@ -113,6 +116,7 @@ img {
 }
 .hero {
   background: #2f303a;
+  padding: 200px 0;
 }
 .main-title {
   font-weight: 900;
@@ -121,13 +125,11 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-collor);
   margin-bottom: 30px;
 }
 .main-title-hero {
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
 }
 .modal-btn {
   min-width: 200px;
@@ -140,10 +142,11 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--hero-collor);
   background: var(--accent-color);
   cursor: pointer;
   border-radius: 4px;
+  border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -159,12 +162,21 @@ img {
 .parent-indent {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: 50px;
+}
+.portfolio-cards-indent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: -30px;
   margin-top: -30px;
 }
 .spacing-between-cards {
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: 8px;
+  margin-top: 8px;
 }
 .cards-benefits {
   flex-basis: calc((100%-4 * 30) / 4);
@@ -225,31 +237,36 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
 }
 .footer {
   background: #2f303a;
+  padding: 60px 0;
 }
-.indent-footer {
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-.link-footer {
+.element-style {
   font-style: normal;
-  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 .contact-footer {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
-
+.contact-footer-tel {
+  margin-bottom: 0;
+}
 /*Портфолио*/
 .visually-hidden {
   position: absolute;
@@ -261,15 +278,8 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
-.header-portfolio {
-  border: 1px solid #ececec;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  padding-bottom: 25px;
-}
+
 .filter-btn {
-  margin-bottom: 34px;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -279,14 +289,11 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  border-width: 0px;
-}
-.parent-indent-btn {
-  display: flex;
-  justify-content: center;
+  border: none;
 }
 .spacing-between-cards-portfolio {
-  margin-bottom: 30;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .portfolio-list {
   flex-wrap: wrap;
@@ -322,7 +329,4 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-.footer-p-b {
-  padding-bottom: 60px;
 }
