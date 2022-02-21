@@ -159,6 +159,18 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.studio-cards-parent-indent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+.studio-spacing-between-cards {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .parent-indent {
   display: flex;
   align-items: center;
